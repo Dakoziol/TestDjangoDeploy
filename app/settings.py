@@ -81,6 +81,7 @@ WSGI_APPLICATION = 'app.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(url=os.environ.get('DATABASE_URL'), engine='django.db.backends.postgresql')
 }
+print(DATABASES)
 
 
 # Password validation
